@@ -1,1 +1,26 @@
 /* CSS Eksternal */
+
+.webtitle {
+    display: flex;
+    flex-direction: row;
+    background-color: #CD6858;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}
+
+.katik {
+    text-align: center;
+    ;
+    padding: 10px;
+    color: #5B443E;
+}
+
+.katik2 {
+    color: #CFA987;
+    
+}
+
+.welcome {
+    text-align: center;
+}
