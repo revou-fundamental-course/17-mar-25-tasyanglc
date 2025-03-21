@@ -1,23 +1,28 @@
 /* CSS Eksternal */
 
+body {
+    background-color: #F6EEE0;
+}
+
 .webtitle {
     display: flex;
     flex-direction: row;
-    background-color: #CD6858;
+    background-color: #C38370;
     align-items: center;
     justify-content: center;
     margin: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .katik {
     text-align: center;
     ;
     padding: 10px;
-    color: #5B443E;
+    color: #A45C40;
 }
 
 .katik2 {
-    color: #CFA987;
+    color: #E4B7A0;
     
 }
 
