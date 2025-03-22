@@ -1,28 +1,54 @@
 /* CSS Eksternal */
 
 body {
-    background-color: #F6EEE0;
+    background-color: #D8E1E7;
 }
 
-.webtitle {
+.header1 {
     display: flex;
     flex-direction: row;
-    background-color: #C38370;
+    background-color: #002952;
     align-items: center;
     justify-content: center;
     margin: 0%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: cursive;
+}
+
+.header2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main {
+    text-align: center;
+    font-family: monospace;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+}
+
+.button2 {
+    background-color: #002952;
+}
+
+#text {
+    color: #E2B327;
 }
 
 .katik {
     text-align: center;
     ;
     padding: 10px;
-    color: #A45C40;
+    color: #E2B327;
+    margin: 0px;
 }
 
 .katik2 {
-    color: #E4B7A0;
+    color: #fff;
     
 }
 
