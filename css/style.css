@@ -88,7 +88,9 @@ body {
     box-shadow: 0 4px 8px #3d3d3d;
 }
 
-.boxp {
+/* Styling Keliling Persegi */
+
+.boxkp {
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -102,17 +104,18 @@ body {
     margin-right: 5px;
 }
 
-.titlep {
+.titlekp {
     background-color: #a9def9;
     box-shadow: 0 4px 8px #3d3d3d;
     width: 100%;
     height: 100px;
     font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 40px;
     border-radius: 10px;
 }
 
-#titlep {
+#titlekp {
     color: #006090;
     text-align: center;
 }
@@ -120,9 +123,11 @@ body {
 .imgp {
     height: 100px;
     width: 100px;
+    border: 2px solid #006090;
+    box-shadow: 0 2px 4px #006090;
 }
 
-#textp {
+#textkp {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -132,9 +137,10 @@ body {
     margin-bottom: 5px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    color: #006090;
 }
 
-#formulap {
+#formulakp {
     display: flex;
     padding: 15px;
     width: 100px;
@@ -144,6 +150,12 @@ body {
     justify-content: center;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#hitungtitle {
+    color: #006090;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .inputbox {
@@ -189,5 +201,184 @@ body {
 
 .resetbutton:hover {
     background-color: #006090;
+    color: #fefee3;
+}
+
+/* Styling Luas Persegi */
+
+.boxlp {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*height: 600px;*/
+    box-shadow: 0 4px 12px #3d3d3d;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.titlelp {
+    background-color: #a9def9;
+    box-shadow: 0 4px 8px #3d3d3d;
+    width: 100%;
+    height: 100px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+#titlelp {
+    color: #006090;
+    text-align: center;
+}
+
+#textlp {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #006090;
+}
+
+#formulalp {
+    display: flex;
+    padding: 15px;
+    width: 100px;
+    box-shadow:0 4px 8px #3d3d3d;
+    background-color: #a9def9;
+    color: #006090;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#hitungtitle {
+    color: #006090;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Styling Keliling Persegi Panjang */
+
+.boxkpp {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*height: 600px;*/
+    box-shadow: 0 4px 12px #3d3d3d;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.titlekpp {
+    background-color: #ffb4d8;
+    box-shadow: 0 4px 8px #3d3d3d;
+    width: 100%;
+    height: 100px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+#titlekpp {
+    color: #7b0039;
+    text-align: center;
+}
+
+.imgpp {
+    height: 100px;
+    width: 150px;
+    border: 2px solid #7b0039;
+    box-shadow: 0 2px 4px #7b0039;
+}
+
+#textkpp {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7b0039;
+}
+
+#formulakpp {
+    display: flex;
+    padding: 15px;
+    width: 100px;
+    box-shadow:0 4px 8px #3d3d3d;
+    background-color: #ffb4d8;
+    color: #7b0039;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#hitungtitlepp {
+    color: #7b0039;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.inputbox {
+    width: 98%;
+    height: 30px;
+    border: none;
+    box-shadow: 0 2px 6px #3d3d3d;
+    margin: 20px;
+}
+
+.hitungbuttonpp {
+    width: 80px;
+    height: 40px;
+    border: none;
+    box-shadow: 0 4px 4px #3d3d3d;
+    background-color: #ffb4d8;
+    color: #7b0039;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hitungbuttonpp:hover {
+    background-color: #7b0039;
+    color: #fefee3;
+}
+
+.resetbuttonpp {
+    width: 80px;
+    height: 40px;
+    border: none;
+    box-shadow: 0 4px 4px #3d3d3d;
+    background-color: #ffb4d8;
+    color: #7b0039;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-end;
+    margin-top: 15px;
+    margin-right: 14px;
+    margin-bottom: 20px;
+}
+
+.resetbuttonpp:hover {
+    background-color: #7b0039;
     color: #fefee3;
 }
