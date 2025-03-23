@@ -1,13 +1,13 @@
 body {
-    background-color: #4c956c;
+    background-color: #fff;
 }
 
 .header-box {
     height: 120px;
-    background-color: #fefee3;
+    background-color: #fcf6bd;
     border-radius: 5px;
     box-shadow: 0 4px 12px #3d3d3d;
-    margin: 0px;
+    margin: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,4 +27,167 @@ body {
 #calculatorimg {
     height: 29px;
     width: 29px;
+}
+
+.navbar {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    font-size: larger;
+}
+
+#welcometitle {
+    color: #2c6e49;
+    margin: 0;
+    margin-top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#welcometext {
+    color: #2c6e49;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.navbutton {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#buttonp {
+    background-color: #d0f4de;
+    height: 35px;
+    border: none;
+    box-shadow: 0 4px 8px #3d3d3d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#buttonpp {
+    background-color: #d0f4de;
+    height: 35px;
+    border: none;
+    box-shadow: 0 4px 8px #3d3d3d;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#buttonp:hover {
+    background-color: #00501e;
+    color: #fefee3;
+    box-shadow: 0 4px 8px #3d3d3d;
+}
+
+#buttonpp:hover {
+    background-color: #00501e;
+    color: #fefee3;
+    box-shadow: 0 4px 8px #3d3d3d;
+}
+
+.boxp {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*height: 600px;*/
+    box-shadow: 0 4px 12px #3d3d3d;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.titlep {
+    background-color: #a9def9;
+    box-shadow: 0 4px 8px #3d3d3d;
+    width: 100%;
+    height: 100px;
+    font-size: larger;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+#titlep {
+    color: #006090;
+    text-align: center;
+}
+
+.imgp {
+    height: 100px;
+    width: 100px;
+}
+
+#textp {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#formulap {
+    display: flex;
+    padding: 15px;
+    width: 100px;
+    box-shadow:0 4px 8px #3d3d3d;
+    background-color: #a9def9;
+    color: #006090;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputbox {
+    width: 98%;
+    height: 30px;
+    border: none;
+    box-shadow: 0 2px 6px #3d3d3d;
+    margin: 20px;
+}
+
+.hitungbutton {
+    width: 80px;
+    height: 40px;
+    border: none;
+    box-shadow: 0 4px 4px #3d3d3d;
+    background-color: #a9def9;
+    color: #006090;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hitungbutton:hover {
+    background-color: #006090;
+    color: #fefee3;
+}
+
+.resetbutton {
+    width: 80px;
+    height: 40px;
+    border: none;
+    box-shadow: 0 4px 4px #3d3d3d;
+    background-color: #a9def9;
+    color: #006090;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-end;
+    margin-top: 15px;
+    margin-right: 14px;
+    margin-bottom: 20px;
+}
+
+.resetbutton:hover {
+    background-color: #006090;
+    color: #fefee3;
 }
