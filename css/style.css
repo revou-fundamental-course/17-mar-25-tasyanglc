@@ -1,57 +1,30 @@
-/* CSS Eksternal */
-
 body {
-    background-color: #D8E1E7;
+    background-color: #4c956c;
 }
 
-.header1 {
-    display: flex;
-    flex-direction: row;
-    background-color: #002952;
-    align-items: center;
-    justify-content: center;
-    margin: 0%;
-    font-family: cursive;
-}
-
-.header2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-main {
-    text-align: center;
-    font-family: monospace;
-}
-
-.button {
-    display: flex;
-    flex-direction: column;
-}
-
-.button2 {
-    background-color: #002952;
-}
-
-#text {
-    color: #E2B327;
-}
-
-.katik {
-    text-align: center;
-    ;
-    padding: 10px;
-    color: #E2B327;
+.header-box {
+    height: 120px;
+    background-color: #fefee3;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px #3d3d3d;
     margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
 }
 
-.katik2 {
-    color: #fff;
-    
+#title1 {
+    color: #2c6e49;
 }
 
-.welcome {
-    text-align: center;
+#title2 {
+    color: #d68c45;
+}
+
+#calculatorimg {
+    height: 29px;
+    width: 29px;
 }
