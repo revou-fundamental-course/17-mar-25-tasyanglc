@@ -2,31 +2,41 @@ body {
     background-color: #fff;
 }
 
+#persegi {
+    display: none;
+    transition: all 1s ease;
+}
+
+#persegipanjang {
+    display: none;
+    transition: all 1s ease;
+}
+
 .header-box {
     height: 120px;
-    background-color: #fcf6bd;
+    background-color: #000;
     border-radius: 5px;
-    box-shadow: 0 4px 12px #3d3d3d;
+    box-shadow: 0 4px 12px #2b2b2b;
     margin: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
     font-size: larger;
 }
 
 #title1 {
-    color: #2c6e49;
+    color: #fff;
 }
 
 #title2 {
-    color: #d68c45;
+    color: #fff;
 }
 
 #calculatorimg {
-    height: 29px;
-    width: 29px;
+    height: 35px;
+    width: 35px;
 }
 
 .navbar {
@@ -38,15 +48,28 @@ body {
     font-size: larger;
 }
 
+.welcomehead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#starimg {
+    height: 30px;
+    width: 30px;
+    justify-self: center;
+}
+
 #welcometitle {
-    color: #2c6e49;
+    color: #000;
     margin: 0;
     margin-top: 35px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #welcometext {
-    color: #2c6e49;
+    color: #000;
     margin: 10px;
     font-family: Arial, Helvetica, sans-serif
 }
@@ -58,39 +81,43 @@ body {
 }
 
 #buttonp {
-    background-color: #d0f4de;
-    height: 35px;
-    border: none;
+    background-color: #fff;
+    color: #000;
+    height: 45px;
+    border: 2px solid #000;
+    border-radius: 8px;
     box-shadow: 0 4px 8px #3d3d3d;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: bold;
+    font-size: large;
 }
 
 #buttonpp {
-    background-color: #d0f4de;
-    height: 35px;
-    border: none;
+    background-color: #fff;
+    color: #000;
+    height: 45px;
+    border: 2px solid #000;
+    border-radius: 8px;
     box-shadow: 0 4px 8px #3d3d3d;
     cursor: pointer;
     font-weight: bold;
+    font-size: large;
 }
 
 #buttonp:hover {
-    background-color: #00501e;
-    color: #fefee3;
+    background-color: #04e762;
     box-shadow: 0 4px 8px #3d3d3d;
 }
 
 #buttonpp:hover {
-    background-color: #00501e;
-    color: #fefee3;
+    background-color: #04e762;
     box-shadow: 0 4px 8px #3d3d3d;
 }
 
 /* Styling Keliling Persegi */
 
-.boxkp {
+.box {
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -99,35 +126,47 @@ body {
     /*height: 600px;*/
     box-shadow: 0 4px 12px #3d3d3d;
     border-radius: 10px;
+    border: 2px solid #000;
     margin-top: 30px;
     margin-left: 5px;
     margin-right: 5px;
 }
 
-.titlekp {
-    background-color: #a9def9;
+.title {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
     box-shadow: 0 4px 8px #3d3d3d;
     width: 100%;
     height: 100px;
     font-size: larger;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 40px;
+    font-family: monospace;
+    margin-bottom: 30px;
     border-radius: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-#titlekp {
-    color: #006090;
+#title {
+    color: #fff;
     text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
 }
 
 .imgp {
     height: 100px;
     width: 100px;
-    border: 2px solid #006090;
-    box-shadow: 0 2px 4px #006090;
+    box-shadow: 0 4px 8px #000;
 }
 
-#textkp {
+.imgpp {
+    height: 100px;
+    width: 150px;
+    box-shadow: 0 2px 4px #000;
+}
+
+#text {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -137,25 +176,28 @@ body {
     margin-bottom: 5px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    color: #006090;
+    color: #000;
 }
 
-#formulakp {
+#formula {
     display: flex;
     padding: 15px;
     width: 100px;
     box-shadow:0 4px 8px #3d3d3d;
-    background-color: #a9def9;
-    color: #006090;
+    background-color: #04e762;
+    color: #000;
     justify-content: center;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
 }
 
 #hitungtitle {
-    color: #006090;
+    color: #000;
+    background-color: #04e762;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    padding: 10px;
 }
 
 .inputbox {
@@ -169,216 +211,30 @@ body {
 .hitungbutton {
     width: 80px;
     height: 40px;
-    border: none;
+    border: 1px solid #000;
+    border-radius: 10px;
     box-shadow: 0 4px 4px #3d3d3d;
-    background-color: #a9def9;
-    color: #006090;
+    background-color: #000;
+    color: #fff;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-.hitungbutton:hover {
-    background-color: #006090;
-    color: #fefee3;
+    margin-top: 15px;
 }
 
 .resetbutton {
     width: 80px;
     height: 40px;
-    border: none;
+    border: 1px solid #000;
+    border-radius: 10px;
     box-shadow: 0 4px 4px #3d3d3d;
-    background-color: #a9def9;
-    color: #006090;
+    background-color: #fff;
+    color: #000;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     align-self: flex-end;
-    margin-top: 15px;
+    margin-top: 18px;
     margin-right: 14px;
     margin-bottom: 20px;
-}
-
-.resetbutton:hover {
-    background-color: #006090;
-    color: #fefee3;
-}
-
-/* Styling Luas Persegi */
-
-.boxlp {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /*height: 600px;*/
-    box-shadow: 0 4px 12px #3d3d3d;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.titlelp {
-    background-color: #a9def9;
-    box-shadow: 0 4px 8px #3d3d3d;
-    width: 100%;
-    height: 100px;
-    font-size: larger;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 40px;
-    border-radius: 10px;
-}
-
-#titlelp {
-    color: #006090;
-    text-align: center;
-}
-
-#textlp {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    text-align: left;
-    margin-left: 15px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #006090;
-}
-
-#formulalp {
-    display: flex;
-    padding: 15px;
-    width: 100px;
-    box-shadow:0 4px 8px #3d3d3d;
-    background-color: #a9def9;
-    color: #006090;
-    justify-content: center;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#hitungtitle {
-    color: #006090;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-/* Styling Keliling Persegi Panjang */
-
-.boxkpp {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /*height: 600px;*/
-    box-shadow: 0 4px 12px #3d3d3d;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.titlekpp {
-    background-color: #ffb4d8;
-    box-shadow: 0 4px 8px #3d3d3d;
-    width: 100%;
-    height: 100px;
-    font-size: larger;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 40px;
-    border-radius: 10px;
-}
-
-#titlekpp {
-    color: #7b0039;
-    text-align: center;
-}
-
-.imgpp {
-    height: 100px;
-    width: 150px;
-    border: 2px solid #7b0039;
-    box-shadow: 0 2px 4px #7b0039;
-}
-
-#textkpp {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    text-align: left;
-    margin-left: 15px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #7b0039;
-}
-
-#formulakpp {
-    display: flex;
-    padding: 15px;
-    width: 100px;
-    box-shadow:0 4px 8px #3d3d3d;
-    background-color: #ffb4d8;
-    color: #7b0039;
-    justify-content: center;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#hitungtitlepp {
-    color: #7b0039;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-.inputbox {
-    width: 98%;
-    height: 30px;
-    border: none;
-    box-shadow: 0 2px 6px #3d3d3d;
-    margin: 20px;
-}
-
-.hitungbuttonpp {
-    width: 80px;
-    height: 40px;
-    border: none;
-    box-shadow: 0 4px 4px #3d3d3d;
-    background-color: #ffb4d8;
-    color: #7b0039;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.hitungbuttonpp:hover {
-    background-color: #7b0039;
-    color: #fefee3;
-}
-
-.resetbuttonpp {
-    width: 80px;
-    height: 40px;
-    border: none;
-    box-shadow: 0 4px 4px #3d3d3d;
-    background-color: #ffb4d8;
-    color: #7b0039;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    align-self: flex-end;
-    margin-top: 15px;
-    margin-right: 14px;
-    margin-bottom: 20px;
-}
-
-.resetbuttonpp:hover {
-    background-color: #7b0039;
-    color: #fefee3;
 }
