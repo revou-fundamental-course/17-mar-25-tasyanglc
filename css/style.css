@@ -4,12 +4,10 @@ body {
 
 #persegi {
     display: none;
-    transition: all 1s ease;
 }
 
 #persegipanjang {
     display: none;
-    transition: all 1s ease;
 }
 
 .header-box {
@@ -106,12 +104,12 @@ body {
 }
 
 #buttonp:hover {
-    background-color: #04e762;
+    background-color: #fca311;
     box-shadow: 0 4px 8px #3d3d3d;
 }
 
 #buttonpp:hover {
-    background-color: #04e762;
+    background-color: #fca311;
     box-shadow: 0 4px 8px #3d3d3d;
 }
 
@@ -184,7 +182,7 @@ body {
     padding: 15px;
     width: 100px;
     box-shadow:0 4px 8px #3d3d3d;
-    background-color: #04e762;
+    background-color: #fca311;
     color: #000;
     justify-content: center;
     font-weight: bold;
@@ -194,18 +192,78 @@ body {
 
 #hitungtitle {
     color: #000;
-    background-color: #04e762;
+    background-color: #fca311;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding: 10px;
 }
 
 .inputbox {
-    width: 98%;
-    height: 30px;
-    border: none;
+    width: 95%;
+    height: 35px;
+    border: 1px solid #000;
     box-shadow: 0 2px 6px #3d3d3d;
     margin: 20px;
+}
+
+#resultkp {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    height: auto;
+    width: 170px;
+    padding: 5px;
+    /*box-shadow: 0 4px 10px #000;*/
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+
+#resultlp {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    height: auto;
+    width: 170px;
+    padding: 5px;
+    /*box-shadow: 0 4px 10px #000;*/
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+
+#resultkpp {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    height: auto;
+    width: 170px;
+    padding: 5px;
+    /*box-shadow: 0 4px 10px #000;*/
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+
+#resultlpp {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    height: auto;
+    width: 170px;
+    padding: 5px;
+    /*box-shadow: 0 4px 10px #000;*/
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
 }
 
 .hitungbutton {
