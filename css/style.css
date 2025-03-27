@@ -1,15 +1,18 @@
+/* Style untuk keseluruhan laman html */
 body {
     background-color: #fff;
 }
 
+/* Display default section persegi dan persegi panjang */
 #persegi {
     display: none;
 }
 
-#persegipanjang {
+#persegi-panjang {
     display: none;
 }
 
+/* Header utama */
 .header-box {
     height: 120px;
     background-color: #000;
@@ -17,6 +20,7 @@ body {
     box-shadow: 0 4px 12px #2b2b2b;
     margin: 5px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 15px;
@@ -24,6 +28,7 @@ body {
     font-size: larger;
 }
 
+/* Elemen dalam header utama */
 #title1 {
     color: #fff;
 }
@@ -37,7 +42,8 @@ body {
     width: 35px;
 }
 
-.navbar {
+/* Section untuk welcome message */
+.welcome-section {
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -46,39 +52,45 @@ body {
     font-size: larger;
 }
 
-.welcomehead {
+/* section welcome header */
+.welcome-header {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
-#starimg {
+/* hiasan welcome header */
+#sparkling-image {
     height: 30px;
     width: 30px;
     justify-self: center;
 }
 
-#welcometitle {
+/* welcome title */
+#welcome-title {
     color: #000;
     margin: 0;
     margin-top: 35px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#welcometext {
+/* welcome message */
+#welcome-text {
     color: #000;
     margin: 10px;
     font-family: Arial, Helvetica, sans-serif
 }
 
-.navbutton {
+/* nav button untuk section persegi dan persegi panjang */
+.nav-buttons {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-#buttonp {
+/* style button persegi */
+#button-persegi {
     background-color: #fff;
     color: #000;
     height: 45px;
@@ -91,7 +103,14 @@ body {
     font-size: large;
 }
 
-#buttonpp {
+/* hover button persegi*/
+#button-persegi:hover {
+    background-color: #fca311;
+    box-shadow: 0 4px 8px #3d3d3d;
+}
+
+/* style button persegi panjang */
+#button-persegi-panjang {
     background-color: #fff;
     color: #000;
     height: 45px;
@@ -103,48 +122,45 @@ body {
     font-size: large;
 }
 
-#buttonp:hover {
+/* hover button persegi panjang */
+#button-persegi-panjang:hover {
     background-color: #fca311;
     box-shadow: 0 4px 8px #3d3d3d;
 }
 
-#buttonpp:hover {
-    background-color: #fca311;
-    box-shadow: 0 4px 8px #3d3d3d;
-}
-
-/* Styling Keliling Persegi */
-
+/* style untuk seluruh elemen dalam section box */
+/* Style untuk section box */
 .box {
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*height: 600px;*/
     box-shadow: 0 4px 12px #3d3d3d;
     border-radius: 10px;
     border: 2px solid #000;
     margin-top: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
+/* box title */
 .title {
     display: flex;
     flex-direction: column;
     background-color: #000;
-    box-shadow: 0 4px 8px #3d3d3d;
+    box-shadow: 0 4px 10px #3d3d3d;
     width: 100%;
     height: 100px;
     font-size: larger;
     font-family: monospace;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
 }
 
+/* text title */
 #title {
     color: #fff;
     text-align: center;
@@ -152,24 +168,29 @@ body {
     font-weight: bold;
 }
 
-.imgp {
+/* gambar persegi */
+.image-persegi {
     height: 100px;
     width: 100px;
     box-shadow: 0 4px 8px #000;
+    margin: 15px;
 }
 
-.imgpp {
+/* image persegi panjang */
+.image-persegi-panjang {
     height: 100px;
     width: 150px;
     box-shadow: 0 2px 4px #000;
+    margin: 15px;
 }
 
+/* text keterangan rumus */ 
 #text {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
     text-align: left;
-    margin-left: 15px;
+    margin-left: 25px;
     margin-top: 5px;
     margin-bottom: 5px;
     font-weight: bold;
@@ -177,6 +198,7 @@ body {
     color: #000;
 }
 
+/* kotak rumus */
 #formula {
     display: flex;
     padding: 15px;
@@ -190,96 +212,102 @@ body {
     margin: 15px;
 }
 
-#hitungtitle {
-    color: #000;
-    background-color: #fca311;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    padding: 10px;
+/* style input box */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
 }
 
+/* style input box */
 .inputbox {
-    width: 95%;
     height: 35px;
+    margin-top: 5px;
     border: 1px solid #000;
     box-shadow: 0 2px 6px #3d3d3d;
-    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
 }
 
-#resultkp {
+/* style result untuk section keliling persegi */
+#result-keliling-persegi {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: auto;
+    width: 25%;
+    padding: 5px;
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+
+/* style result untuk section luas persegi */
+#result-luas-persegi {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: auto;
+    width: 25%;
+    padding: 5px;
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+
+/* style result untuk section keliling persegi panjang */
+#result-keliling-pp {
     display: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
     margin-bottom: 15px;
     height: auto;
-    width: 170px;
+    width: 25%;
     padding: 5px;
-    /*box-shadow: 0 4px 10px #000;*/
     border: 2px solid #000;
     background-color: #fff;
     color: #000;
 }
 
-#resultlp {
+/* style result untuk section luas persegi panjang */
+#result-luas-pp {
     display: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
     margin-bottom: 15px;
     height: auto;
-    width: 170px;
+    width: 25%;
     padding: 5px;
-    /*box-shadow: 0 4px 10px #000;*/
     border: 2px solid #000;
     background-color: #fff;
     color: #000;
 }
 
-#resultkpp {
-    display: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 15px;
-    height: auto;
-    width: 170px;
-    padding: 5px;
-    /*box-shadow: 0 4px 10px #000;*/
-    border: 2px solid #000;
-    background-color: #fff;
-    color: #000;
-}
-
-#resultlpp {
-    display: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 15px;
-    height: auto;
-    width: 170px;
-    padding: 5px;
-    /*box-shadow: 0 4px 10px #000;*/
-    border: 2px solid #000;
-    background-color: #fff;
-    color: #000;
-}
-
+/* style button hitung */
 .hitungbutton {
     width: 80px;
     height: 40px;
-    border: 1px solid #000;
+    border: none;
     border-radius: 10px;
-    box-shadow: 0 4px 4px #3d3d3d;
-    background-color: #000;
-    color: #fff;
+    box-shadow: 0 4px 6px #585858;
+    background-color: #fca311;
+    color: #000;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 15px;
 }
 
+/* style button reset */
 .resetbutton {
     width: 80px;
     height: 40px;
@@ -293,6 +321,44 @@ body {
     transition: all 0.3s ease;
     align-self: flex-end;
     margin-top: 18px;
-    margin-right: 14px;
+    margin-right: 25px;
     margin-bottom: 20px;
+}
+
+/* style footer */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    font-family: monospace;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 25px;
+    background-color: black;
+    color: #fff;
+}
+
+/* Penyesuaian tampilan responsif di media lain*/
+@media (max-width: 450px) {
+    #title1 {
+        font-size: 23px;
+    }
+
+    #title2 {
+        font-size: 17px;
+    }
+
+    #calculatorimg {
+        height: 25px;
+        width: 25px;
+    }
+
+    #welcometitle {
+        font-size: 23px;
+    }
+
+    footer {
+        font-size: x-small;
+    }
 }

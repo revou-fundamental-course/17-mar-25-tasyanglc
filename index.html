@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link stylesheet CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Link script Javascript -->
     <script src="js/script.js"></script>
     <title>Katik</title>
 </head>
 
 <body>
+    <!-- Header untuk judul utama -->
     <header>
         <div class="header-box">
             <h1 id="title1">Katik</h1>
@@ -18,106 +21,187 @@
     </header>
     
     <main>
+        <!-- Section untuk welcome message dan nav buttons per section -->
         <section>
-            <div class="navbar">
-                <div class="welcomehead">
-                    <img id="starimg" src="assets\sparkling mustard.png">
-                    <h1 id="welcometitle" >Welcome to Katik</h1>
-                    <img id="starimg" src="assets\sparkling mustard.png">
+            <div class="welcome-section">
+                <!-- Welcome header -->
+                <div class="welcome-header">
+                    <img id="sparkling-image" src="assets\sparkling mustard.png">
+                    <h1 id="welcome-title">
+                        Welcome to Katik
+                    </h1>
+                    <img id="sparkling-image" src="assets\sparkling mustard.png">
                 </div>
-                <p id="welcometext">
+
+                <!-- Welcome message -->
+                <p id="welcome-text">
                     Hello, Friends! Hello my bestfriends~
                     <br>
                     Let's play together ... Oops!
                     <br>
                     Web apps ini bakal bantuin kamu ngitung keliling dan luas bangun datar
                 </p>
-                <nav class="navbutton">
-                    <button onclick="showSection('persegi')" id="buttonp">Persegi</button>
-                    <button onclick="showSection('persegipanjang')" id="buttonpp">Persegi Panjang</button>
+
+                <!-- Navigation button untuk memilih section -->
+                <nav class="nav-buttons">
+                    <button id="button-persegi" onclick="showSection('persegi')">
+                        Persegi
+                    </button>
+                    <button id="button-persegi-panjang" onclick="showSection('persegi-panjang')">
+                        Persegi Panjang
+                    </button>
                 </nav>
             </div>
         </section>
 
-        <section id="persegi">
+        <!-- Section untuk persegi -->
+        <section id="persegi"> 
+            <!-- Container keliling persegi -->
             <div class="box">
+                <!-- Header keliling persegi -->
                 <header class="title">
                     <h1 id="title">Keliling Persegi</h1>
                 </header>
-                <img class="imgp" src="assets\Tanpa judul (1080 x 1080 piksel).png">
+                <img class="image-persegi" src="assets\Tanpa judul (1080 x 1080 piksel).png">
+                <!-- Rumus keliling persegi -->
                 <p id="text">Rumus keliling persegi</p>
                 <p id="formula">K = 4 x s</p>
                 <p id="text">Di mana :</p>
                 <p id="text">K = Keliling persegi</p>
                 <p id="text">s = Panjang sisi persegi</p>
-                <h3 id="hitungtitle">Hitung Keliling Persegi</h3>
-                <input class="inputbox" id="inputkp" type="number" placeholder=" Masukkan sisi ...">
-                <div id="resultkp"></div>
-                <button class="hitungbutton" onclick="kelilingPersegi()">Hitung</button>
-                <button class="resetbutton" onclick="resetKelilingPersegi()">Reset</button>
+                <!-- Input box -->
+                <form>
+                    <input class="inputbox" id="input-keliling-persegi"
+                           type="number" 
+                           placeholder=" Masukkan sisi ..."
+                    >
+                </form>
+                <!-- Container untuk menampilkan result -->
+                <div id="result-keliling-persegi"></div>
+                <!-- Button hitung -->
+                <button class="hitungbutton" onclick="kelilingPersegi()">
+                    Hitung
+                </button>
+                <!-- Button reset -->
+                <button class="resetbutton" onclick="resetKelilingPersegi()">
+                    Reset
+                </button>
             </div>
 
+            <!-- Container luas persegi -->
             <div class="box">
+                <!-- Header luas persegi -->
                 <header class="title">
                     <h1 id="title">Luas Persegi</h1>
                 </header>
-                <img class="imgp" src="assets\Tanpa judul (1080 x 1080 piksel).png">
+                <img class="image-persegi" src="assets\Tanpa judul (1080 x 1080 piksel).png">
+                <!-- Rumus luas persegi -->
                 <p id="text">Rumus luas persegi</p>
                 <p id="formula">L = s x s</p>
                 <p id="text">Di mana :</p>
                 <p id="text">L = Luas persegi</p>
                 <p id="text">s = Panjang sisi persegi</p>
-                <h3 id="hitungtitle">Hitung Luas Persegi</h3>
-                <input class="inputbox" id="inputlp" type="number" placeholder=" Masukkan sisi ...">
-                <div id="resultlp"></div>
-                <button class="hitungbutton" onclick="luasPersegi()">Hitung</button>
-                <button class="resetbutton" onclick="resetLuasPersegi()">Reset</button>
+                <!-- Input box -->
+                <form>
+                    <input class="inputbox" id="input-luas-persegi"
+                    type="number" 
+                    placeholder=" Masukkan sisi ..."
+                    >
+                </form>
+                <!-- Container untuk menampilkan result -->
+                <div id="result-luas-persegi"></div>
+                <!-- Button hitung -->
+                <button class="hitungbutton" onclick="luasPersegi()">
+                    Hitung
+                </button>
+                <!-- Button reset -->
+                <button class="resetbutton" onclick="resetLuasPersegi()">
+                    Reset
+                </button>
             </div>
         </section>
 
-        <section id="persegipanjang">
+        <!-- Section untuk persegi panjang -->
+        <section id="persegi-panjang">
+            <!-- Container keliling persegi panjang -->
             <div class="box">
+                <!-- Header keliling persegi panjang -->
                 <header class="title">
                     <h1 id="title">Keliling Persegi Panjang</h1>
                 </header>
-                <img class="imgpp" src="assets\Tanpa judul (1080 x 1080 piksel).png">
+                <img class="image-persegi-panjang" src="assets\Tanpa judul (1080 x 1080 piksel).png">
+                <!-- Rumus keliling persegi panjang -->
                 <p id="text">Rumus keliling persegi panjang</p>
                 <p id="formula">K = 2(p + l)</p>
                 <p id="text">Di mana :</p>
                 <p id="text">K = Keliling persegi panjang</p>
                 <p id="text">p = Panjang persegi panjang</p>
                 <p id="text">l = Lebar persegi panjang</p>
-                <h3 id="hitungtitle">Hitung Keliling Persegi Panjang</h3>
-                <input class="inputbox" id="inputpanjangkpp" type="number" placeholder=" Masukkan panjang ...">
-                <input class="inputbox" id="inputlebarkpp" type="number" placeholder=" Masukkan lebar ...">
-                <div id="resultkpp"></div>
-                <button class="hitungbutton" onclick="kelilingPersegiPanjang()">Hitung</button>
-                <button class="resetbutton" onclick="resetKelilingPersegiPanjang()">Reset</button>
+                <!-- Input box -->
+                <form>
+                    <input class="inputbox" id="panjang-keliling-pp" 
+                    type="number" 
+                    placeholder=" Masukkan panjang ..."
+                    >
+                    <input class="inputbox" id="lebar-keliling-pp" 
+                    type="number" 
+                    placeholder=" Masukkan lebar ..."
+                    >
+                </form>
+                <!-- Container untuk menampilkan result -->
+                <div id="result-keliling-pp"></div>
+                <!-- Button hitung -->
+                <button class="hitungbutton" onclick="kelilingPersegiPanjang()">
+                    Hitung
+                </button>
+                <!-- Button reset -->
+                <button class="resetbutton" onclick="resetKelilingPersegiPanjang()">
+                    Reset
+                </button>
             </div>
 
+            <!-- Container luas persegi panjang -->
             <div class="box">
+                <!-- Header luas persegi panjang -->
                 <header class="title">
                     <h1 id="title">Luas Persegi Panjang</h1>
                 </header>
-                <img class="imgpp" src="assets\Tanpa judul (1080 x 1080 piksel).png">
+                <img class="image-persegi-panjang" src="assets\Tanpa judul (1080 x 1080 piksel).png">
+                <!-- Rumus luas persegi panjang -->
                 <p id="text">Rumus luas persegi panjang</p>
                 <p id="formula">L = p x l</p>
                 <p id="text">Di mana :</p>
                 <p id="text">L = Luas persegi panjang</p>
                 <p id="text">p = Panjang persegi panjang</p>
                 <p id="text">l = Lebar persegi panjang</p>
-                <h3 id="hitungtitle">Hitung Luas Persegi Panjang</h3>
-                <input class="inputbox" id="inputpanjanglpp" type="number" placeholder=" Masukkan panjang ...">
-                <input class="inputbox" id="inputlebarlpp" type="number" placeholder=" Masukkan lebar ...">
-                <div id="resultlpp"></div>
-                <button class="hitungbutton" onclick="luasPersegiPanjang()">Hitung</button>
-                <button class="resetbutton" onclick="resetLuasPersegiPanjang()">Reset</button>
+                <!-- Input box -->
+                <form>
+                    <input class="inputbox" id="panjang-luas-pp" 
+                    type="number" 
+                    placeholder=" Masukkan panjang ..."
+                    >
+                    <input class="inputbox" id="lebar-luas-pp" 
+                    type="number" 
+                    placeholder=" Masukkan lebar ..."
+                    >
+                </form>
+                <!-- Container untuk menampilkan result -->
+                <div id="result-luas-pp"></div>
+                <!-- Button hitung -->
+                <button class="hitungbutton" onclick="luasPersegiPanjang()">
+                    Hitung
+                </button>
+                <!-- Button reset -->
+                <button class="resetbutton" onclick="resetLuasPersegiPanjang()">
+                    Reset
+                </button>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-
+        <p>Katik - RevoU SEFC Mini Coding Project | by tasyanglc</p>
     </footer>
 </body>
 </html>

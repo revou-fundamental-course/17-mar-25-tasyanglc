@@ -1,4 +1,4 @@
-// Javascript Eksternal
+// fungsi untuk menampilkan section berdasarkan nav-button yang diklik
 function showSection(sectionId) {
     let section = document.getElementById(sectionId);
 
@@ -6,14 +6,15 @@ function showSection(sectionId) {
         section.style.display = 'none';
     } else {
         document.getElementById('persegi').style.display = 'none';
-        document.getElementById('persegipanjang').style.display = 'none';
+        document.getElementById('persegi-panjang').style.display = 'none';
         section.style.display = 'block';
     }
 }
 
+// fungsi untuk menerima dan memvalidasi input, kalkulasi, dan menampilkan hasil pada keliling persegi
 function kelilingPersegi() {
-    let sisi = document.getElementById('inputkp').value;
-    let output = document.getElementById('resultkp');
+    let sisi = document.getElementById('input-keliling-persegi').value;
+    let output = document.getElementById('result-keliling-persegi');
     
     if (sisi == '') {
         output.innerHTML = 
@@ -46,17 +47,19 @@ function kelilingPersegi() {
     output.style.display = 'block';
 }
 
+// fungsi untuk mereset tampilan
 function resetKelilingPersegi() {
-    document.getElementById('inputkp').value = '';
+    document.getElementById('input-keliling-persegi').value = '';
 
-    let output = document.getElementById('resultkp');
+    let output = document.getElementById('result-keliling-persegi');
     output.innerHTML = '';
     output.style.display = 'none';
 }
 
+// fungsi untuk menerima dan memvalidasi input, kalkulasi, dan menampilkan hasil pada luas persegi
 function luasPersegi() {
-    let sisi = document.getElementById('inputlp').value;
-    let output = document.getElementById('resultlp'); 
+    let sisi = document.getElementById('input-luas-persegi').value;
+    let output = document.getElementById('result-luas-persegi'); 
     
     if (sisi == '') {
         output.innerHTML = 
@@ -89,18 +92,20 @@ function luasPersegi() {
     output.style.display = 'block';
 }
 
+// fungsi untuk mereset tampilan
 function resetLuasPersegi() {
-    document.getElementById('inputlp').value = '';
+    document.getElementById('input-luas-persegi').value = '';
 
-    let output = document.getElementById('resultlp');
+    let output = document.getElementById('result-luas-persegi');
     output.innerHTML = '';
     output.style.display = 'none';
 }
 
+// fungsi untuk menerima dan memvalidasi input, kalkulasi, dan menampilkan hasil pada keliling persegi panjang
 function kelilingPersegiPanjang() {
-    let panjang = document.getElementById('inputpanjangkpp').value;
-    let lebar = document.getElementById('inputlebarkpp').value;
-    let output = document.getElementById('resultkpp');
+    let panjang = document.getElementById('panjang-keliling-pp').value;
+    let lebar = document.getElementById('lebar-keliling-pp').value;
+    let output = document.getElementById('result-keliling-pp');
     
     if (panjang == '' || lebar == '') {
         output.innerHTML =
@@ -133,19 +138,21 @@ function kelilingPersegiPanjang() {
     output.style.display = 'block';
 }
 
+// fungsi untuk mereset tampilan
 function resetKelilingPersegiPanjang() {
-    document.getElementById('inputpanjangkpp').value = '';
-    document.getElementById('inputlebarkpp').value = '';
+    document.getElementById('panjang-keliling-pp').value = '';
+    document.getElementById('lebar-keliling-pp').value = '';
 
-    let output = document.getElementById('resultkpp');
+    let output = document.getElementById('result-keliling-pp');
     output.innerHTML = '';
     output.style.display = 'none';
 }
 
+// fungsi untuk menerima dan memvalidasi input, kalkulasi, dan menampilkan hasil pada luas persegi panjang
 function luasPersegiPanjang() {
-    let panjang = document.getElementById('inputpanjanglpp').value;
-    let lebar = document.getElementById('inputlebarlpp').value;
-    let output = document.getElementById('resultlpp');
+    let panjang = document.getElementById('panjang-luas-pp').value;
+    let lebar = document.getElementById('lebar-luas-pp').value;
+    let output = document.getElementById('result-luas-pp');
     
     if (panjang == '' || lebar == '') {
         output.innerHTML =
@@ -178,11 +185,12 @@ function luasPersegiPanjang() {
     output.style.display = 'block';
 }
 
+// fungsi untuk mereset tampilan
 function resetLuasPersegiPanjang() {
-    document.getElementById('inputpanjanglpp').value = '';
-    document.getElementById('inputlebarlpp').value = '';
+    document.getElementById('panjang-luas-pp').value = '';
+    document.getElementById('lebar-luas-pp').value = '';
 
-    let output = document.getElementById('resultlpp');
+    let output = document.getElementById('result-luas-pp');
     output.innerHTML = '';
     output.style.display = 'none';
 }
