@@ -221,7 +221,7 @@ form {
 }
 
 /* style input box */
-.inputbox {
+.input-box {
     height: 35px;
     margin-top: 5px;
     border: 1px solid #000;
@@ -293,7 +293,7 @@ form {
 }
 
 /* style button hitung */
-.hitungbutton {
+.hitung-button {
     width: 80px;
     height: 40px;
     border: none;
@@ -308,7 +308,7 @@ form {
 }
 
 /* style button reset */
-.resetbutton {
+.reset-button {
     width: 80px;
     height: 40px;
     border: 1px solid #000;
